@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.wrap{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    perspective: 20px;
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.title{
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0 0 10px white;
+    z-index: 2;
+    transform: translateZ(-5x) scale(1.5);
+}
+
+.back, .fore{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.back{
+    z-index: -1;
+    transform: translateZ(-20px) scale(2.1);
+}
+
+.fore{
+    z-index: 1;
+    width: 350px;
+    height: 400px;
+    top: 200;
+    transform: translateZ(-10px) scale(1.2);
+}
+
+
+.container{
+    font-size: 1.2rem;
+    padding: 2rem;
+    color: white;
+    background: linear-gradient(to bottom, rgb(12, 11, 56), black);
+}
